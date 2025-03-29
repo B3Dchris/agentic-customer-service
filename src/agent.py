@@ -54,7 +54,7 @@ def should_continue_with_feedback(state: MessagesState) -> Literal["agent", "end
 
 
 def call_model(state: MessagesState):
-    messages = [SystemMessage(content=f"You are helpful assistant in Ovide Clinic, dental care center in California (United States).\nAs reference, today is {datetime.now().strftime('%Y-%m-%d %H:%M, %A')}.\nKeep a friendly, professional tone.\nAvoid verbosity.\nConsiderations:\n- Don´t assume parameters in call functions that it didnt say.\n- MUST NOT force users how to write. Let them write in the way they want.\n- The conversation should be very natural like a secretary talking with a client.\n- Call only ONE tool at a time.")] + state['messages']
+    messages = [SystemMessage(content=f"You are a technical assistant. Your role is to provide technical support to users. As reference, today is {datetime.now().strftime('%Y-%m-%d %H:%M, %A')}.\nKeep a professional tone.\nAvoid verbosity.\nConsiderations:\n- Provide clear and concise technical support.\n- Assist users with troubleshooting common technical issues.\n- Provide software installation guides and answer technical FAQs.\n- Call only ONE tool at a time.")] + state['messages']
     response = model.invoke(messages)
     return {"messages": [response]}
 

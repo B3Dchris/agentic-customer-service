@@ -105,5 +105,27 @@
                 "license_number": "OR789012"
             }
         ]
+    },
+    {
+        "specialization": "Technical Support",
+        "responsibilities": [
+            "Provides troubleshooting for common technical issues.",
+            "Offers software installation guides.",
+            "Answers technical FAQs."
+        ],
+        "services": [
+            {
+                "name": "Internet Connectivity Troubleshooting",
+                "description": "Assists with resolving internet connectivity issues."
+            },
+            {
+                "name": "Software Installation",
+                "description": "Provides guides and support for installing software."
+            },
+            {
+                "name": "Technical FAQs",
+                "description": "Answers frequently asked technical questions."
+            }
+        ]
     }
 ]

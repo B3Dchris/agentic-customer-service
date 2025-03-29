@@ -110,5 +110,21 @@
     {
         "question":"When and how can I access my dental study results?",
         "answer":"Your dental study results will be available around 5 business days after your appointment. When they are ready, you can access them in the following ways:\n- Through our secure online portal: www.caovideclinic.org\n- Coming to our clinic whenever you want in our attention time."
+    },
+    {
+        "question": "How can I troubleshoot internet connectivity issues?",
+        "answer": "1. Check your router.\n2. Restart your modem.\n3. Check for outages in your area."
+    },
+    {
+        "question": "How do I install software?",
+        "answer": "1. Ensure you have enough disk space.\n2. Check for software compatibility.\n3. Follow the installation guide provided."
+    },
+    {
+        "question": "How do I reset my password?",
+        "answer": "1. Go to the login page.\n2. Click on 'Forgot Password'.\n3. Follow the instructions to reset your password."
+    },
+    {
+        "question": "How do I update software?",
+        "answer": "1. Open the software.\n2. Go to the 'Help' menu.\n3. Click on 'Check for Updates'."
     }
 ]

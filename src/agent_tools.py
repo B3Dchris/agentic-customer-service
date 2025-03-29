@@ -168,4 +168,42 @@ def obtain_specialization_by_doctor(doctor_name:Literal['kevin anderson','robert
         catalog = json.loads(file.read())
 
     return str([{specialization['specialization']: [dentist['name'] for dentist in specialization['dentists']]} for specialization in catalog])
-    
+
+@tool
+def troubleshoot_common_issues(issue_description: str):
+    """
+    Provide troubleshooting steps for common technical issues.
+    The issue description should be mentioned by the user in the query.
+    """
+    # Dummy data
+    common_issues = {
+        "internet connectivity": "1. Check your router.\n2. Restart your modem.\n3. Check for outages in your area.",
+        "software installation": "1. Ensure you have enough disk space.\n2. Check for software compatibility.\n3. Follow the installation guide provided."
+    }
+    return common_issues.get(issue_description.lower(), "Issue not recognized. Please provide more details.")
+
+@tool
+def provide_installation_guide(software_name: str):
+    """
+    Provide a software installation guide.
+    The software name should be mentioned by the user in the query.
+    """
+    # Dummy data
+    installation_guides = {
+        "windows 10": "1. Download the Windows 10 ISO file.\n2. Create a bootable USB drive.\n3. Follow the on-screen instructions to install.",
+        "ubuntu": "1. Download the Ubuntu ISO file.\n2. Create a bootable USB drive.\n3. Follow the on-screen instructions to install."
+    }
+    return installation_guides.get(software_name.lower(), "Installation guide not available. Please provide more details.")
+
+@tool
+def answer_technical_faqs(question: str):
+    """
+    Answer technical FAQs.
+    The question should be mentioned by the user in the query.
+    """
+    # Dummy data
+    technical_faqs = {
+        "how to reset password": "1. Go to the login page.\n2. Click on 'Forgot Password'.\n3. Follow the instructions to reset your password.",
+        "how to update software": "1. Open the software.\n2. Go to the 'Help' menu.\n3. Click on 'Check for Updates'."
+    }
+    return technical_faqs.get(question.lower(), "FAQ not recognized. Please provide more details.")
